@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="520.0" prefWidth="655.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="Controladores.PrincipalController">
+    <stylesheets>
+        <URL value="@/styles/principal.css" />
+    </stylesheets>
+   <children>
+      <BorderPane fx:id="bp" prefHeight="520.0" prefWidth="801.0">
+         <left>
+            <VBox alignment="CENTER" prefHeight="520.0" prefWidth="106.0" style="-fx-background-color: #142428;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_inicio" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#abrirInicio" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 2px 0px 0px 0px;" text="Inicio" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_inventario" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="253.0" mnemonicParsing="false" onAction="#abrirInventario" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 2px 0px 0px 0px;" text="Inventario" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_añadir" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="270.0" mnemonicParsing="false" onAction="#abrirAnadir" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 2px 0px 0px 0px;" text="Añadir" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_objetivos" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="252.0" mnemonicParsing="false" onAction="#abrirObjetivos" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 2px 0px 0px 0px;" text="Objetivos" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_fichas" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="304.0" mnemonicParsing="false" onAction="#abrirFichas" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 2px 0px 0px 0px;" text="Fichas" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_historial" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="345.0" mnemonicParsing="false" onAction="#abrirFichas" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 2px 0px 2px 0px;" text="Historial" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+      <Pane fx:id="header" layoutX="107.0" onMouseDragged="#onClicHeaderDragged" onMousePressed="#onClicHeaderPressed" prefHeight="39.0" prefWidth="694.0">
+         <children>
+            <Label fx:id="botonCerrar" layoutX="663.0" layoutY="-3.0" onMouseClicked="#cerrar" prefHeight="45.0" prefWidth="21.0" text="X">
+               <font>
+                  <Font name="Calibri Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="botonMinimizar" layoutX="613.0" layoutY="-6.0" onMouseClicked="#minimizar" prefHeight="51.0" prefWidth="40.0" text="―">
+               <font>
+                  <Font name="Calibri Bold" size="28.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+CRUD\CrudTransaccion.class
+Pojos\Fichas.class
+Controladores\Panel_anadirController.class
+Conexion\Conexion.class
+Controladores\Panel_inicioController.class
+Controladores\Panel_fichasController.class
+Controladores\Panel_objetivosController.class
+Pojos\Transacciones.class
+CRUD\CrudItems.class
+Inventario\SuperMain.class
+Pojos\Items.class
+Controladores\PrincipalController.class
+Inventario\Main.class
+Controladores\Panel_inventarioController.class
+CRUD\CrudFicha.class
